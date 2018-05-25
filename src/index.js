@@ -13,19 +13,23 @@ import reducers from 'reducers'
 import Layout from 'containers/Layout'
 import Phones from 'containers/Phones'
 import Phone from 'containers/Phone'
+import Basket from 'containers/Basket'
+
 
 const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)))
 
 const history = syncHistoryWithStore(browserHistory, store)
 
 ReactDOM.render(
-    <Provider store={store}>
-        <Router history={history}>
-            <Route component={Layout}>
-                <Route path='/' component={Phones} />
-            </Route>
-            <Route path='/phones/:id' component={Phone} />
-        </Router>
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <Router history={history}>
+      <Route component={Layout}>
+        <Route path='/' component={Phones} />
+        <Route path='/categories/:id' component={Phones} />
+      </Route>
+      <Route path='/phones/:id' component={Phone} />
+      <Route path='/basket' component={Basket} />
+    </Router>
+  </Provider>,
+  document.getElementById('root')
 )
