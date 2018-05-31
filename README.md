@@ -4,6 +4,8 @@ Simple shop application based on the following technologies:
 * ReactJS
 * Redux
 
+This is how it looks like: https://jumperok.github.io/react-redux-shop/#/
+
 ## Installation
 Clone from repository:
 ```
