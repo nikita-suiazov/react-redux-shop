@@ -1,9 +1,3 @@
-# Shop
-
-Simple shop application based on the following technologies:
-* ReactJS
-* Redux
-
 ## Running
 Inside "react-redux-shop" folder run application:
 ```js
