@@ -4,15 +4,6 @@ Simple shop application based on the following technologies:
 * ReactJS
 * Redux
 
-## Installation
-Clone from repository:
-```
-$ git clone https://github.com/Jumperok/react-redux-shop.git
-```
-Install dependencies inside "react-redux-shop" folder:
-```js
-$ yarn // or 'npm i'
-```
 ## Running
 Inside "react-redux-shop" folder run application:
 ```js
